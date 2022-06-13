@@ -26,7 +26,8 @@ Error occured while adding student please try again"/>
 <%} %>
 <h2>Add Student</h2>
 <a href="<%=homeURL.toString() %>">Home</a><br/><br/>
-<form method="POST">
+
+<form action="<%=addStudentActionURL%>" name="studentForm" method="POST">
     <b>First Name</b><br/>
     <input type="text" name="<portlet:namespace/>firstName" id="<portlet:namespace/>firstName"/><br/>
     <b>Last Name</b><br/>

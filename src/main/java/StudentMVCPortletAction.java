@@ -50,7 +50,7 @@ public class StudentMVCPortletAction extends MVCPortlet {
             }
 // navigate to add student jsp page
             actionResponse.setRenderParameter("mvcPath",
-                    "webapp/add_student.jsp");
+                    "/jsps/add_student.jsp");
         } catch (Exception e) {
             SessionErrors.add(actionRequest.getPortletSession(),
                     "student-add-error");
@@ -75,7 +75,7 @@ public class StudentMVCPortletAction extends MVCPortlet {
             }
 // navigate to add student jsp page
             actionResponse.setRenderParameter("mvcPath",
-                    "webapp/delete_student.jsp");
+                    "/jsps/delete_student.jsp");
         } catch (Exception e) {
             SessionErrors.add(actionRequest.getPortletSession(),
                     "student-add-error");
@@ -118,7 +118,7 @@ public class StudentMVCPortletAction extends MVCPortlet {
             }
 // navigate to add student jsp page
             actionResponse.setRenderParameter("mvcPath",
-                    "webapp/update_student.jsp");
+                    "/jsps/update_student.jsp");
         } catch (Exception e) {
             SessionErrors.add(actionRequest.getPortletSession(),
                     "student-update-error");
@@ -142,17 +142,17 @@ public class StudentMVCPortletAction extends MVCPortlet {
             if (cmd.equals("DELETE")) {
 // navigate to add student jsp page
                 actionResponse.setRenderParameter("mvcPath",
-                        "webapp/delete_student.jsp");
+                        "/jsps/delete_student.jsp");
             }
             if (cmd.equals("UPDATE")) {
 // navigate to add student jsp page
                 actionResponse.setRenderParameter("mvcPath",
-                        "webapp/update_student.jsp");
+                        "/jsps/update_student.jsp");
             }
             if (cmd.equals("VIEW")) {
 // navigate to add student jsp page
                 actionResponse.setRenderParameter("mvcPath",
-                        "webapp/display_student.jsp");
+                        "/jsps/display_student.jsp");
             }
 
         } catch (Exception e) {
